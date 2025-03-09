@@ -232,16 +232,17 @@ h3{
 
 .contenedor-proyectos{
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
 }
 
 .proyectos{
+    width: 360px;
     height: 340px;
-    width: 350px;
     background-color: #0c0c0c;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     box-shadow: 0 4px 6px #9b9a9a1a;
     transition: transform 0.3s ease;
@@ -257,14 +258,18 @@ h3{
     padding: 1rem;
 }
 
+.info h3{
+    font-size: 1.35rem;
+}
+
 .info p{
-    font-size: 0.90rem;
+    font-size: 0.80rem;
     font-weight: 500;
 }
 
 .proyectos img{
     width: 100%;
-    height: 100%;
+    height: 11rem;
 }
 
 footer{
@@ -288,6 +293,10 @@ footer{
 
 .redes-sociales a:hover{
     color: var(--color-primario-claro);
+}
+
+#precios{
+    display: none;
 }
 
 .contenedor-precios{
