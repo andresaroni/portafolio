@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("header");
   const rincon_peruano = document.getElementById("rincon_peruano")
   const landing = document.getElementById("landing")
+  const contactar = document.getElementById("contactar")
 
   menuToggle.addEventListener("click", () => {
 
@@ -46,6 +47,15 @@ document.addEventListener("DOMContentLoaded", () => {
     window.open("https://landing-smoky-xi.vercel.app", "_blank");
     
   });
+
+  contactar.addEventListener('click', () => {
+    
+    var phoneNumber = '+593998425682';
+    var message = 'Deseo cotizar un proyecto';
+    var url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, '_blank');
+});
 
   const observerOptions = {
     threshold: 0.1
