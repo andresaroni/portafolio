@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelector(".links");
   const header = document.querySelector("header");
   const rincon_peruano = document.getElementById("rincon_peruano")
+  const landing = document.getElementById("landing")
 
   menuToggle.addEventListener("click", () => {
 
@@ -38,6 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.open("https://elrinconperuano-restaurant.com", "_blank");
 
+  });
+
+  landing.addEventListener("click", () =>{
+
+    window.open("https://landing-smoky-xi.vercel.app", "_blank");
+    
   });
 
   const observerOptions = {
